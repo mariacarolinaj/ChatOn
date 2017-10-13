@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #000000;" styleClass="background" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateRoomController">
+   <children>
+      <BorderPane layoutX="27.0" layoutY="20.0" prefHeight="374.0" prefWidth="560.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <StackPane cacheShape="false" BorderPane.alignment="BOTTOM_RIGHT">
+               <children>
+                  <TextField fx:id="username" alignment="TOP_CENTER" promptText="username" style="-fx-background-color: black; -fx-border-color: black; -fx-border-radius: 35; -fx-border-style: solid;" StackPane.alignment="TOP_CENTER">
+                     <effect>
+                        <Reflection bottomOpacity="0.02" fraction="0.58" topOpacity="0.17" />
+                     </effect>
+                     <StackPane.margin>
+                        <Insets left="200.0" right="190.0" top="270.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font name="Lumberjack" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="roomid" alignment="TOP_CENTER" promptText="new room id" style="-fx-background-color: black; -fx-border-color: black; -fx-border-radius: 35;" StackPane.alignment="TOP_CENTER">
+                     <effect>
+                        <Reflection topOpacity="0.17">
+                           <input>
+                              <Glow />
+                           </input>
+                        </Reflection>
+                     </effect>
+                     <StackPane.margin>
+                        <Insets left="200.0" right="190.0" top="320.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font name="Lumberjack" size="13.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@user-name-2.PNG" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets right="340.0" top="270.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@room-id.PNG" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets right="340.0" top="320.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="9.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@divisao-inputs.PNG" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets left="200.0" right="185.0" top="296.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="9.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@divisao-inputs.PNG" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets left="200.0" right="185.0" top="344.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <Button fx:id="entrar" graphicTextGap="0.0" mnemonicParsing="false" onMouseClicked="#criarSala" style="-fx-background-color: #009688;" text="       CRIAR SALA     &gt;   " textFill="WHITE" StackPane.alignment="TOP_CENTER">
+                     <StackPane.margin>
+                        <Insets top="390.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font name="Leelawadee UI" size="15.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.07" />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="139.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@create-room-header.PNG" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets top="100.0" />
+                     </StackPane.margin>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
