@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #000000;" styleClass="background" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PaginaInicialController">
+   <children>
+      <BorderPane layoutX="27.0" layoutY="20.0" prefHeight="374.0" prefWidth="560.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <StackPane alignment="TOP_CENTER" cacheShape="false" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <ImageView fx:id="joinroom" accessibleHelp="Entrar em um sala" accessibleText="Entrar em um sala" fitHeight="53.0" fitWidth="64.0" onMouseClicked="#entrarSala" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@join-room.PNG" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets right="100.0" top="320.0" />
+                     </StackPane.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" opacity="0.0" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="createroom" fitHeight="53.0" fitWidth="64.0" onMouseClicked="#criarSala" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@create-room.PNG" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets left="100.0" top="320.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="174.0" fitWidth="488.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@home.PNG" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets top="130.0" />
+                     </StackPane.margin>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
